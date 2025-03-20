@@ -1,0 +1,286 @@
+/* Reset dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF6F0;
+    color: #333;
+    padding-top: 60px; /* Mencegah header menutupi konten */
+}
+
+/* Header / Topbar */
+.topbar, header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #DDB992;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    gap: 8px;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #663300; /* Warna coklat gelap */
+    white-space: nowrap; /* Cegah teks terpotong */
+}
+
+/* Navigasi */
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* User Menu (kanan atas) */
+.user-menu, .right-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile img, .profile-pic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ccc;
+}
+
+.dropdown-arrow {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+/* Search Bar */
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 50%;
+    max-width: 400px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Container utama */
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 80px auto 20px;
+    padding: 20px;
+}
+
+/* Bagian Kiri (Bagikan) */
+.share-section {
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.author {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.follow-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.share-links h3 {
+    margin-top: 20px;
+}
+
+.share-links a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+
+.story-content {
+    max-width: 600px; /* Batas lebar agar tidak terlalu melebar */
+    margin: 0 auto; /* Posisi tengah */
+    padding: 15px; /* Spasi dalam */
+    
+    line-height: 1.6; /* Memberikan jarak antar baris */
+    word-wrap: break-word; /* Mencegah kata panjang keluar container */
+    overflow-wrap: break-word;
+}
+
+.story-content h1,h2,h4 {
+    text-align: center;
+}
+ 
+.story-content p{
+    text-align: justify;
+}
+/* Bagian Kanan (Rekomendasi) */
+.recommendations {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.recommendations h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.recommendations ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recommendations ul li {
+    margin-bottom: 10px;
+}
+
+.recommendations ul li a {
+    text-decoration: none;
+    color: #D6A57A;
+    transition: color 0.3s ease;
+}
+
+.recommendations ul li a:hover {
+    color: #663300;
+}
+
+/* Dropdown */
+.write-dropdown {
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+}
+
+/* Right Menu */
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Memberi jarak antar menu */
+}
+
+.comment-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-top: 2px solid #ddd;
+}
+
+.comment-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.comment-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+}
+
+.comment-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.comment-btn:hover {
+    background-color: #0056b3;
+}
+
+.comment-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.comment-list li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.menu-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+.menu-link:hover {
+    color: #663300; /* Warna hover */
+}
