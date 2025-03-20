@@ -16,11 +16,19 @@
             <input type="text" placeholder="Search">
         </div>
         <div class="profile">
-            <span>Write</span>
-            <span class="write-dropdown">▼</span>
+            <div class="navbar">
+                <div class="dropdown-container">
+                    <button class="dropdown-btn" onclick="toggleDropdown()">Write ▼</button>
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <a href="#">+ Create New Story</a>
+                        <a href="#">My Stories</a>
+                    </div>
+                </div>
+            </div>
             <img src="images/profile.jpg" alt="Profile">
             <span class="dropdown-arrow">▼</span>
         </div>
+        <script src="js/write.js"></script>
     </header>
 
     <main>
