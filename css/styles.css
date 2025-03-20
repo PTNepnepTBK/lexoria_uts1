@@ -24,6 +24,20 @@ header {
     margin-right: 10px;
 }
 
+.profile img {
+    width: 45px; 
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dropdown-arrow {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 14px;
+    color: black;
+}
+
 .search-bar input {
     padding: 8px;
     border: none;
