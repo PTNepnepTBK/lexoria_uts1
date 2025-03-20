@@ -47,6 +47,7 @@ body {
 }
 
 .dropdown-arrow {
+    cursor: pointer;
     margin-left: 5px;
     font-size: 14px;
     color: black;
@@ -56,4 +57,28 @@ body {
     flex: 1;
     display: flex;
     justify-content: center;
+}
+
+.search-bar input {
+    width: 50%;
+    max-width: 400px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.write-dropdown {
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
 }
