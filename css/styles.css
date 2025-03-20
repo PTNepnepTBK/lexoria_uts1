@@ -38,6 +38,12 @@ header {
     color: black;
 }
 
+.write-dropdown {
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+}
+
 .search-bar input {
     padding: 8px;
     border: none;
