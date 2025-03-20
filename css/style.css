@@ -51,3 +51,9 @@ body {
     font-size: 14px;
     color: black;
 }
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
