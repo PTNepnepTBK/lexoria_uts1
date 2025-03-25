@@ -1,0 +1,171 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Warna Background */
+body {
+    background-color: #fdfbf9;
+    color: #4d3a2a;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #b38b5d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 40px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #c49a6c;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Toggle */
+.toggle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d7b899;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.toggle-label {
+    font-weight: bold;
+    color: #4d3a2a;
+}
+
+/* Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ddd;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+/* Divider */
+.divider {
+    height: 10px;
+    background: #b38b5d;
+    margin: 10px 0;
+}
+
+/* Font Section */
+.font-section {
+    background: #b38b5d;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.font-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.font-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.font-btn {
+    background: #d7b899;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #4d3a2a;
+    font-weight: bold;
+}
+
+/* Serif Section */
+.serif-container {
+    background: #d7b899;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.serif-title {
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background: #c49a6c;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.footer-text {
+    font-weight: bold;
+    font-size: 14px;
+}
