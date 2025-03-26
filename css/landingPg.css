@@ -1,0 +1,111 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Warna Utama */
+:root {
+    --primary-color: #c49a6c;
+    --text-color: #4d3a2a;
+    --bg-light: #fffcf7; /* Warna putih lebih sesuai dengan mockup */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 15px 60px; /* Tambah padding untuk proporsi lebih baik */
+}
+
+.logo img {
+    width: 50px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Jarak antar elemen navbar lebih sesuai */
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.nav-links a:hover::after {
+    content: '\25BC'; /* Tanda panah ke bawah */
+    font-size: 12px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 250px;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    gap: 50px;
+    background-color: var(--bg-light);
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: var(--text-color);
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.hero-image img {
+    width: 500px;
+}
