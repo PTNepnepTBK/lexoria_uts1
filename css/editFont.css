@@ -14,7 +14,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #b38b5d;
+    background-color: #DDB992;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +42,7 @@ body {
 .container {
     max-width: 600px;
     margin: 20px auto;
-    background: #c49a6c;
+    background: #DDB992;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
