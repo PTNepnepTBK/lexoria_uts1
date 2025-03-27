@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/headers.css"/>
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        margin: 0;
+        height: 100vh;
+      }
+      .selected {
+        border: 2px solid rgb(0, 0, 0);
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        width: 100%;
+        margin-top: 10%;
+      }
+      .form-container {
+        max-width: 50%;
+      }
+      .form-container {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: auto;
+        text-align: center;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 15px;
+      }
+      .img-form-group {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        margin-bottom: 15px;
+      }
+      .img-form-group img {
+        margin-right: 10px; /* Atur jarak sesuai kebutuhan */
+      }
+
+      .form-group label {
+        font-weight: medium;
+        margin-bottom: 5px;
+      }
+
+      .form-group input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      .form-group textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      .button {
+        display: inline-block;
+        padding: 2% 3%;
+        font-size: 1em;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s, border-color 0.3s;
+      }
+      .primary {
+        color: #fff;
+        background-color: #007cef;
+        border: 1px solid #007cef;
+      }
+      .button:hover.primary {
+        background-color: #0067c7;
+        border-color: #0067c7;
+      }
+      .outline-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+      }
+      #loading {
+        display: none;
+        text-align: center;
+        margin-top: 20px;
+      }
+      #loading-container {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #loading {
+        display: inline-block;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #3498db;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+      }
+      @media (max-width: 400px) {
+        .form-container {
+          max-width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="logo">
+          <img src="assets/images/logoo.png" alt="Lexoria" />
+          <!-- <div class="item">Item 1</div>
+          <div class="item">Item 2</div> -->
+        </div>
+  
+        <div class="profile">
+          <span class="dropdown-arrow">Register</span>
+        </div>
+      </header>
+    <div class="container">
+      <img
+        src="assets/images/mockup_phone.png"
+        alt="remor"
+        style="width: 40%"
+      />
+      <div class="form-container" style="min-width: 20%">
+        <h2>login</h2>
+        <form
+          class="body-form"
+          id="myForm"
+          method="POST"
+          action=""
+          enctype="multipart/form-data"
+        >
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password" required />
+          </div>
+          <div class="form-group">
+            <button type="submit" class="button primary">Submit</button>
+          </div>
+
+          <div id="linkContainer" style="text-align: left">
+            <p style="text-align: left">
+              Lupa Password? <a href="#">reset password</a>
+            </p>
+            <p style="text-align: left">
+              Belum Memiliki Akun?
+              <a href="register.html">Buat Akun</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="loading-container">
+      <div id="loading"></div>
+      <p>Loading...</p>
+    </div>
+  </body>
+</html>

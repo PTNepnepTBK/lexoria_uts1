@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ddb992; /* Warna coklat muda */
+  padding: 10px 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 60px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Pastikan padding tidak menambah lebar total */
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Sesuaikan dengan tinggi top bar */
+}
+
+.logo img {
+    max-height: 150%; /* Pastikan gambar tidak lebih dari 90% tinggi top bar */
+    width: auto; /* Biarkan lebar menyesuaikan agar rasio tetap terjaga */
+    object-fit: contain; /* Memastikan gambar tetap dalam batas dan tidak terdistorsi */
+}
+
+
+
+.logo span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #663300; /* Warna coklat gelap */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dropdown-arrow {
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 14px;
+  color: black;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 50%;
+  max-width: 400px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.right-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.write-dropdown {
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+}
