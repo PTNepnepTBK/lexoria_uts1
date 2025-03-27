@@ -4,12 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lexoria - Membaca</title>
-    <link rel="stylesheet" href="css/style_readers.css">
+    <link rel="stylesheet" href="assets/css/style_readers.css">
+    <link rel="stylesheet" href="assets/css/headers.css">
 </head>
 <body>
-    <div class="topbar">
+    <header>
+        <div class="logo" style="gap: 5%;">
+          <img src="assets/images/logoo.png" alt="Lexoria" />
+          <div class="menu-link">Karya</div>
+          <div class="menu-link">Telusuri</div>
+        </div>
+  
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="profile">
+          <div class="navbar">
+            <div class="dropdown-container">
+              <button class="dropdown-btn" onclick="toggleDropdown()">
+                Menulis ▼
+              </button>
+              <div class="dropdown-menu" id="dropdownMenu">
+                <a href="newStory.html">+ Create New Story</a>
+                <a href="#">My Stories</a>
+              </div>
+            </div>
+          </div>
+          <img src="assets/images/profile.jpg" alt="Profile" />
+          <span class="dropdown-arrow">▼</span>
+        </div>
+      </header>
+    <!-- <div class="topbar">
         <div class="logo">
-            <img src="images/Screenshot_2025-03-05_121208-removebg-preview.png" alt="Lexoria">
+            <img src="assets/images/Screenshot_2025-03-05_121208-removebg-preview.png" alt="Lexoria">
         </div>
         <div class="left-menu">
             <a href="#" class="menu-link">Karya</a>
@@ -23,17 +50,17 @@
                 Write ▼
             </div>
             <div class="profile">
-                <img src="images/profile.jpg" alt="Profile">
+                <img src="assets/images/profile.jpg" alt="Profile">
                 <span class="dropdown-arrow">▼</span>
             </div>
         </div>
-    </div>
+    </div> -->
     
     <main class="container">
         <!-- Bagian Kiri (Bagikan) -->
         <aside class="share-section">
             <div class="author">
-                <img src="images/profilewp.png" alt="Profile Picture" class="profile-pic">
+                <img src="assets/images/profilewp.png" alt="Profile Picture" class="profile-pic">
                 <p>oleh <strong>leefe_</strong></p>
                 <button class="follow-btn">Following</button>
             </div>
@@ -163,6 +190,6 @@ Dalam dekap mendung, "Wadaw" itu menyeru sukacita di ufuk barat. Aku membaca gug
     </section>
 
 
-    <script src="js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -4,32 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
-    <link rel="stylesheet" href="css/style-profilePage.css">
+    <link rel="stylesheet" href="assets/css/style-profilePage.css">
+    <link rel="stylesheet" href="assets/css/headers.css">
 </head>
 <body>
 
     <!-- Top Bar -->
-    <div class="topbar">
+    <header>
         <div class="logo">
+<<<<<<< HEAD
             <img src="images/logoo.png" alt="Lexoria">
+=======
+            <img src="assets/images/logoo.png" alt="Lexoria">
+>>>>>>> 201e642e609522bddfe186f584258675ebc9f12a
         </div>
         <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Search">
+            <input type="text" placeholder="Search">
         </div>
         <div class="profile">
+<<<<<<< HEAD
             <button class="dropdown-btn" onclick="toggleDropdown()">Menulis ▼</button>
             <div class="dropdown" id="dropdownMenu">
                 <a href="#">Buat cerita baru</a>
                 <a href="#">Ceritaku</a>
+=======
+            <div class="navbar">
+                <div class="dropdown-container">
+                    <button class="dropdown-btn" onclick="toggleDropdown()">Menulis ▼</button>
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <a href="newStory.html">+ Create New Story</a>
+                        <a href="#">My Stories</a>
+                    </div>
+                </div>
+>>>>>>> 201e642e609522bddfe186f584258675ebc9f12a
             </div>
-            <div class="profile-icon">N</div>
+            <img src="assets/images/profile.jpg" alt="Profile">
+            <span class="dropdown-arrow">▼</span>
         </div>
+<<<<<<< HEAD
         <script src="js/button.js"></script>
     </div>
+=======
+        <script src="assets/js/write.js"></script>
+    </header>
+
+>>>>>>> 201e642e609522bddfe186f584258675ebc9f12a
 
     <!-- Cover Profile -->
     <div class="cover-container">
-        <img src="images/Cover.jpg" alt="Cover">
+        <img src="assets/images/Cover.jpg" alt="Cover">
     </div>
 
     <!-- Profile Info -->
@@ -80,7 +103,7 @@
             <p>Daftar Bacaan • 5 Cerita</p>
             <div class="book-list">
                 <div class="book" onclick="highlightBook(this)">
-                    <img src="images/LITNW.jpg" alt="LINTW">
+                    <img src="assets/images/LITNW.jpg" alt="LINTW">
                     <p>LINTW</p>
                     <div class="book-info">
                         <i>👁 835K</i>
@@ -88,7 +111,7 @@
                     </div>
                 </div>
                 <div class="book" onclick="highlightBook(this)">
-                    <img src="images/Lost Stars.jpg" alt="Lost Stars">
+                    <img src="assets/images/Lost Stars.jpg" alt="Lost Stars">
                     <p>Lost Stars</p>
                     <div class="book-info">
                         <i>👁 835K</i>
@@ -96,7 +119,7 @@
                     </div>
                 </div>
                 <div class="book">
-                    <img src="images/Nightbooks.jpg" alt="Nightbooks">
+                    <img src="assets/images/Nightbooks.jpg" alt="Nightbooks">
                     <p>Nightbooks</p>
                     <div class="book-info">
                         <i>👁 835K</i>
@@ -104,7 +127,7 @@
                     </div>
                 </div>
                 <div class="book">
-                    <img src="images/Tales of Wonder.jpg" alt="Tales of Wonder">
+                    <img src="assets/images/Tales of Wonder.jpg" alt="Tales of Wonder">
                     <p>Tales of Wonder</p>
                     <div class="book-info">
                         <i>👁 835K</i>
@@ -112,7 +135,7 @@
                     </div>
                 </div>
                 <div class="book">
-                    <img src="images/The Ninth Life.jpg" alt="The Ninth Life">
+                    <img src="assets/images/The Ninth Life.jpg" alt="The Ninth Life">
                     <p>The Ninth Life</p>
                     <div class="book-info">
                         <i>👁 835K</i>
@@ -122,5 +145,6 @@
             </div>
         </div>        
     </div>
+    <script src="assets/js/write.js"></script>
 </body>
 </html>

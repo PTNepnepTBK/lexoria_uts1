@@ -14,16 +14,27 @@
 }
 
 /* Navbar */
-.navbar {
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--primary-color);
-    padding: 15px 60px; /* Tambah padding untuk proporsi lebih baik */
+    background-color: #DDB992;
+    height: 10vh; /* Pastikan header punya tinggi tetap */
+    padding: 1vh 2vw;
+    box-sizing: border-box;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Pastikan logo tidak lebih besar dari header */
 }
 
 .logo img {
-    width: 50px;
+    height: 120%; /* Pastikan logo tetap di dalam header */
+    width: auto; /* Biarkan proporsi tetap */
+    object-fit: contain;
 }
 
 .nav-container {

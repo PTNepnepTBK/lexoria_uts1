@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Register - SB Admin</title>
+    <link rel="stylesheet" href="assets/css/headers.css" />
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        margin-top: 5%;
+        flex-direction: row;
+        justify-content: center; /* Memastikan elemen berada di tengah secara horizontal */
+        align-items: flex-start; /* Memastikan elemen rata atas secara vertikal */
+        gap: 5%;
+        width: 100%;
+      }
+
+      .form-container {
+        width: 50%;
+        max-width: 600px;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 15px;
+      }
+      .form-group label {
+        font-weight: medium;
+        margin-bottom: 5px;
+      }
+      .form-group input,
+      .form-group textarea,
+      .form-group select {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 16px;
+      }
+
+      /* Style untuk dropdown (select) */
+      .form-group select {
+        appearance: none; /* Hilangkan default browser style */
+        background-color: #fff;
+        cursor: pointer;
+        padding-right: 30px; /* Spasi untuk ikon */
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='gray'><path d='M5 7l5 5 5-5H5z'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 16px;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1em;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s, border-color 0.3s;
+      }
+      .primary {
+        color: #fff;
+        background-color: #007cef;
+        border: 1px solid #007cef;
+      }
+      .button:hover.primary {
+        background-color: #0067c7;
+        border-color: #0067c7;
+      }
+      .tag-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 96%;
+        max-width: 100%;
+        background: white;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        width: 100%; /* Menyesuaikan dengan parent */
+      }
+
+      .tag {
+        background: #007cef;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        max-width: 100%; /* Tambahkan agar tidak melebihi container */
+        word-break: break-word; /* Supaya teks tidak keluar */
+      }
+
+      .tag .remove {
+        background: none;
+        border: none;
+        color: white;
+        font-weight: bold;
+        margin-left: 8px;
+        cursor: pointer;
+      }
+
+      .tag-input {
+        flex-grow: 1; /* Agar input mengambil sisa ruang yang tersedia */
+        min-width: 150px; /* Supaya tetap terlihat saat banyak tag */
+        border: none;
+        outline: none;
+        margin-top: 1%;
+      }
+
+      .image-upload-container {
+        width: 200px;
+        height: 200px;
+        background-color: #e0e0e0; /* Grey Secondary */
+        display: flex;
+        flex-direction: column; /* Susun elemen ke bawah */
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .image-upload-container img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+      }
+
+      .image-upload-container span {
+        position: absolute;
+        font-size: 16px;
+        color: #555;
+        font-weight: bold;
+      }
+
+      .image-upload-container input {
+        display: none; /* Hide input */
+      }
+
+      /* Responsif untuk layar kecil */
+      @media (max-width: 768px) {
+        .form-container {
+          width: 80%;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .form-container {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/images/logoo.png" alt="Lexoria" />
+      </div>
+      <div class="profile">
+        <div class="navbar">
+          <span class="span-danger pointer" >Cancel</span>
+        </div>
+        <img src="assets/images/profile.jpg" alt="Profile" />
+        <span class="dropdown-arrow">Ghaisan ▼</span>
+      </div>
+      <script src="assets/js/write.js"></script>
+    </header>
+
+    <div class="container">
+      <div
+        class="image-upload-container"
+        onclick="document.getElementById('imageInput').click()"
+      >
+        <img src="assets/images/add_image.png" alt="Add Image" />
+        <input
+          type="file"
+          id="imageInput"
+          accept="image/*"
+          onchange="previewImage(event)"
+        />
+      </div>
+
+      <div class="form-container">
+        <h2 style="text-align: left">Detail Cerita</h2>
+        <form
+          class="body-form"
+          id="myForm"
+          method="POST"
+          action=""
+          enctype="multipart/form-data"
+        >
+          <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+          <div class="form-group">
+            <label for="description">Deskripsi:</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+              <option value="">Pilih Kategori</option>
+              <option value="fiction">Fiction</option>
+              <option value="non-fiction">Non-fiction</option>
+              <option value="fantasy">Fantasy</option>
+              <option value="horror">Horror</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div class="tag-container">
+              <div class="tags" id="tags"></div>
+              <input
+                type="text"
+                id="tagInput"
+                class="tag-input"
+                placeholder="Ketik #tag lalu tekan spasi..."
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="targetAudience">Target Audience:</label>
+            <select id="targetAudience" name="targetAudience" required>
+              <option value="">Pilih Target Audience</option>
+              <option value="kids">Kids</option>
+              <option value="teens">Teens</option>
+              <option value="adults">Adults</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="button primary">Next</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const input = document.getElementById("tagInput");
+        const tagsContainer = document.getElementById("tags");
+
+        input.addEventListener("keydown", function (event) {
+          if (
+            (event.key === " " || event.key === "Enter") &&
+            input.value.startsWith("#")
+          ) {
+            event.preventDefault(); // Mencegah input default dari spasi/enter
+            const tagText = input.value.trim();
+
+            if (tagText.length > 1) {
+              createTag(tagText);
+            }
+
+            input.value = ""; // Kosongkan input setelah tag dibuat
+          }
+        });
+
+        function createTag(tagText) {
+          const tag = document.createElement("span");
+          tag.classList.add("tag");
+          tag.innerHTML = `${tagText} <button class="remove">&times;</button>`;
+
+          tag.querySelector(".remove").addEventListener("click", function () {
+            tag.remove();
+          });
+
+          tagsContainer.appendChild(tag);
+        }
+      });
+      function previewImage(event) {
+        const input = event.target;
+        const container = document.querySelector(".image-upload-container");
+
+        if (input.files && input.files[0]) {
+          const reader = new FileReader();
+
+          reader.onload = function (e) {
+            // Hapus semua elemen dalam container sebelum menambahkan gambar
+            container.innerHTML = "";
+
+            // Buat elemen gambar baru
+            const img = document.createElement("img");
+            img.src = e.target.result;
+            container.appendChild(img);
+          };
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+    </script>
+  </body>
+</html>

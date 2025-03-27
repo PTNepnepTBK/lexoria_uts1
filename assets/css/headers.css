@@ -1,0 +1,164 @@
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #DDB992;
+    height: 10vh; /* Pastikan header punya tinggi tetap */
+    padding: 1vh 2vw;
+    box-sizing: border-box;
+}
+/* Wrapper untuk logo dan right-items */
+.logo-right-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Jarak sangat kecil */
+    max-height: 100%;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Pastikan logo tetap sejajar dengan header */
+    max-height: 100%;
+    gap: 5px;
+}
+
+.logo img {
+    max-height: 120%; /* Pastikan logo tidak lebih tinggi dari header */
+    width: auto; /* Menjaga proporsi */
+    object-fit: contain;
+}
+
+
+/* Profile */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img {
+    width: clamp(40px, 5vw, 50px); /* Responsif dengan batasan min & max */
+    height: clamp(40px, 5vw, 50px); /* Pastikan tetap 1:1 */
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* Dropdown Arrow */
+.dropdown-arrow {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+.write-dropdown {
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+}
+
+/* Navbar & Dropdown Styles */
+.navbar {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute; /* Pastikan dropdown berada di luar aliran normal */
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 150px;
+    top: 30px;
+    left: 0;
+    z-index: 9999; /* Pastikan nilai tinggi agar di atas elemen lain */
+}
+
+
+/* Right Items */
+.right-items {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right-items .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 6px;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.right-items .item:hover {
+    background-color: #e0e0e0;
+}
+
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+/* Search Bar */
+.search-bar input {
+    padding: 8px;
+    border: none;
+    border-radius:30px;
+    width: 200px;
+}
+
+.span-danger{
+    color: red;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 600px) {
+    header {
+        padding: 8px 15px;
+    }
+    .logo img {
+        max-height: 2.5rem;
+    }
+    .profile img {
+        width: 35px;
+        height: 35px;
+    }
+    .search-bar input {
+        width: 150px;
+    }
+}
