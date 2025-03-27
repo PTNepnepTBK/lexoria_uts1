@@ -21,9 +21,9 @@
         <input type="text" placeholder="Cari">
     </div>
     <nav class="nav-links">
-        <a href="#">Tulis</a>
-        <a href="#">Masuk</a>
-        <a href="#">Mendaftar</a>
+        <a href="login.html">Tulis</a>
+        <a href="login.html">Masuk</a>
+        <a href="register.html">Daftar</a>
 </nav>
 </header>
 
@@ -49,8 +49,8 @@
         "de Finibus Bonorum et Malorum" by Cicero are also reproduced in 
         their exact original form, accompanied by English versions from the
         1914 translation by H. Rackham.</p>
-        <button class="btn">Mulai Membaca</button>
-        <button class="btn">Mulai Menulis</button>
+        <button class="btn" onclick="redirectToLogin()">Mulai Membaca</button>
+        <button class="btn" onclick="redirectToLogin()">Mulai Menulis</button>
     </div>
     <div class="hero-image">
         <img src="assets/images/laptop.png" alt="Lexoria Preview">
@@ -58,5 +58,15 @@
 </section>
 <script src="assets/js/write.js"></script>
 <script src="assets/js/landingPg.js"></script>
+<script>
+    function redirectToLogin() {
+        window.location.href = 'login.html';
+    }
+
+    const btns = document.querySelectorAll('.btn');
+    btns.forEach(btn => {
+        btn.addEventListener('click', redirectToLogin);
+    });
+</script>
 </body>
 </html>
