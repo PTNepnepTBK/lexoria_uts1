@@ -31,7 +31,7 @@
           </div>
         </div>
         <script src="js/button.js"></script>
-        <img src="assets/images/profile.jpg" alt="Profile" />
+        <img src="assets/images/profile.jpg" alt="Profile" style="cursor: pointer;" onclick="redirectToProfilePage()"/>
         <span class="dropdown-arrow">▼</span>
       </div>
     </header>
@@ -75,6 +75,9 @@
     <script>
         function redirectoReaders() {
           window.location.href = "readers.html";
+        }
+        function redirectToProfilePage(){
+          window.location.href = "profilePage.html"
         }
       </script>
   </body>

@@ -30,7 +30,7 @@
               </div>
             </div>
           </div>
-          <img src="assets/images/profile.jpg" alt="Profile" />
+          <img src="assets/images/profile.jpg" alt="Profile" style="cursor: pointer;" onclick="redirectToProfilePage()"/>
           <span class="dropdown-arrow">▼</span>
         </div>
       </header>
@@ -189,7 +189,12 @@ Dalam dekap mendung, "Wadaw" itu menyeru sukacita di ufuk barat. Aku membaca gug
         </div>
     </section>
 
+    
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js">
+        function redirectToProfilePage(){
+        window.location.href = "profilePage.html"
+    }
+    </script>
 </body>
 </html>
