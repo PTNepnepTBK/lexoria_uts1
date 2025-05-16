@@ -1,84 +1,330 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lexoria</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/headers.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="assets/images/logoo.png" alt="Lexoria" />
-        <!-- <div class="item">Item 1</div>
-        <div class="item">Item 2</div> -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookWise - Temukan Cerita Favoritmu</title>
+  <link rel="stylesheet" href="assets/css/homepage.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="assets/images/logoo.png" alt="Lexoria logo">
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Cari cerita, penulis, genre...">
+    </div>
+    <div class="user-actions">
+      <button class="write-btn">Tulis</button>
+      <div class="user-profile">N</div>
+    </div>
+  </header>
+  
+  <div class="main-content">
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+      <div class="hero-content">
+        <h1 class="hero-title">Temukan Dunia Baru dalam Setiap Cerita</h1>
+        <p class="hero-desc">Jelajahi ribuan cerita dari penulis berbakat dari seluruh dunia.</p>
+        <button class="hero-btn">Eksplor Sekarang</button>
       </div>
-
-      <div class="search-bar">
-        <input type="text" placeholder="Search" />
+      <img src="/api/placeholder/1200/250" alt="Hero Banner" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;">
+    </div>
+    
+    <!-- Categories -->
+    <div class="category-container">
+      <div class="category-tag active">Semua</div>
+      <div class="category-tag">Fantasy</div>
+      <div class="category-tag">Sci-Fi</div>
+      <div class="category-tag">Romance</div>
+      <div class="category-tag">Thriller</div>
+      <div class="category-tag">Mystery</div>
+      <div class="category-tag">Horror</div>
+      <div class="category-tag">Adventure</div>
+      <div class="category-tag">Historical</div>
+      <div class="category-tag">Comedy</div>
+    </div>
+    
+    <!-- Continue Reading -->
+    <div class="section-title">
+      <h2>Lanjutkan Membaca</h2>
+      <a href="#" class="see-all">Lihat Semua</a>
+    </div>
+    <div class="scroll-container">
+      <a href="#" class="book-card">
+        <img src="assets/images/deadpool.jpg" alt="Deadpool" class="book-cover">
+        <div class="book-title">Deadpool</div>
+        <div class="reading-progress">
+          <div class="progress-bar"></div>
+        </div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Spider-Man" class="book-cover">
+        <div class="book-title">Spider-Man: No Way Home</div>
+        <div class="reading-progress">
+          <div class="progress-bar" style="width: 30%"></div>
+        </div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Batman" class="book-cover">
+        <div class="book-title">Batman: The Dark Knight</div>
+        <div class="reading-progress">
+          <div class="progress-bar" style="width: 80%"></div>
+        </div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Wonder Woman" class="book-cover">
+        <div class="book-title">Wonder Woman</div>
+        <div class="reading-progress">
+          <div class="progress-bar" style="width: 15%"></div>
+        </div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Avengers" class="book-cover">
+        <div class="book-title">Avengers: Endgame</div>
+        <div class="reading-progress">
+          <div class="progress-bar" style="width: 50%"></div>
+        </div>
+      </a>
+    </div>
+    
+    <!-- Your Stories -->
+    <div class="section-title">
+      <h2>Cerita Anda</h2>
+      <a href="#" class="see-all">Lihat Semua</a>
+    </div>
+    <div class="scroll-container">
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Deadpool" class="book-cover">
+        <div class="book-title">Deadpool</div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="New Story" class="book-cover">
+        <div class="book-title">Mulai Cerita Baru</div>
+      </a>
+    </div>
+    
+    <!-- Top Favorites -->
+    <div class="section-title">
+      <h2>Top Favorit</h2>
+      <a href="#" class="see-all">Lihat Semua</a>
+    </div>
+    <div class="scroll-container">
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Deadpool" class="book-cover">
+        <div class="book-title">Deadpool</div>
+        <div class="badge trending">Trending</div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Deadpool" class="book-cover">
+        <div class="book-title">Deadpool</div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Deadpool" class="book-cover">
+        <div class="book-title">Deadpool</div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Deadpool" class="book-cover">
+        <div class="book-title">Deadpool</div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Deadpool" class="book-cover">
+        <div class="book-title">Deadpool</div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Deadpool" class="book-cover">
+        <div class="book-title">Deadpool</div>
+      </a>
+    </div>
+    
+    <!-- New Releases -->
+    <div class="section-title">
+      <h2>Rilis Terbaru</h2>
+      <a href="#" class="see-all">Lihat Semua</a>
+    </div>
+    <div class="scroll-container">
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Iron Man" class="book-cover">
+        <div class="book-title">Iron Man: Resurgence</div>
+        <div class="badge new">Baru</div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Black Widow" class="book-cover">
+        <div class="book-title">Black Widow: Origins</div>
+        <div class="badge new">Baru</div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Captain America" class="book-cover">
+        <div class="book-title">Captain America: New Era</div>
+        <div class="badge new">Baru</div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Thor" class="book-cover">
+        <div class="book-title">Thor: God of Thunder</div>
+        <div class="badge new">Baru</div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Hulk" class="book-cover">
+        <div class="book-title">Hulk: Unstoppable</div>
+        <div class="badge new">Baru</div>
+      </a>
+    </div>
+    
+    <!-- Featured Authors -->
+    <div class="section-title">
+      <h2>Penulis Terkemuka</h2>
+      <a href="#" class="see-all">Lihat Semua</a>
+    </div>
+    <div class="featured-authors">
+      <div class="author-card">
+        <img src="/api/placeholder/70/70" alt="Author" class="author-avatar">
+        <div class="author-name">Stan Lee</div>
       </div>
-      <div class="profile">
-        <div class="navbar">
-          <div class="dropdown-container">
-            <button class="dropdown-btn" onclick="toggleDropdown()">
-              Menulis ▼
-            </button>
-            <div class="dropdown-menu" id="dropdownMenu">
-              <a href="newStory.html">+ Create New Story</a>
-              <a href="#">My Stories</a>
-            </div>
-          </div>
-        </div>
-        <script src="js/button.js"></script>
-        <img src="assets/images/profile.jpg" alt="Profile" style="cursor: pointer;" onclick="redirectToProfilePage()"/>
-        <span class="dropdown-arrow">▼</span>
+      <div class="author-card">
+        <img src="/api/placeholder/70/70" alt="Author" class="author-avatar">
+        <div class="author-name">Jack Kirby</div>
       </div>
-    </header>
-
-    <main>
-      <section class="your-stories">
-        <h2>Your Stories</h2>
-        <div class="story" onclick="redirectoReaders()">
-          <img src="assets/images/deadpool.jpg" alt="Deadpool" />
-          <p>Deadpool</p>
-        </div>
-      </section>
-
-      <section class="top-favourites">
-        <h2>Top Favourites</h2>
-        <div class="favourites-container">
-          <div class="story">
-            <img src="assets/images/deadpool.jpg" alt="Deadpool" />
-            <p>Deadpool</p>
-          </div>
-          <div class="story">
-            <img src="assets/images/deadpool.jpg" alt="Deadpool" />
-            <p>Deadpool</p>
-          </div>
-          <div class="story">
-            <img src="assets/images/deadpool.jpg" alt="Deadpool" />
-            <p>Deadpool</p>
-          </div>
-          <div class="story">
-            <img src="assets/images/deadpool.jpg" alt="Deadpool" />
-            <p>Deadpool</p>
-          </div>
-          <div class="story">
-            <img src="assets/images/deadpool.jpg" alt="Deadpool" />
-            <p>Deadpool</p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <script src="assets/js/write.js"></script>
-    <script>
-        function redirectoReaders() {
-          window.location.href = "readers.html";
-        }
-        function redirectToProfilePage(){
-          window.location.href = "profilePage.html"
-        }
-      </script>
-  </body>
+      <div class="author-card">
+        <img src="/api/placeholder/70/70" alt="Author" class="author-avatar">
+        <div class="author-name">Steve Ditko</div>
+      </div>
+      <div class="author-card">
+        <img src="/api/placeholder/70/70" alt="Author" class="author-avatar">
+        <div class="author-name">Alan Moore</div>
+      </div>
+      <div class="author-card">
+        <img src="/api/placeholder/70/70" alt="Author" class="author-avatar">
+        <div class="author-name">Frank Miller</div>
+      </div>
+      <div class="author-card">
+        <img src="/api/placeholder/70/70" alt="Author" class="author-avatar">
+        <div class="author-name">Neil Gaiman</div>
+      </div>
+    </div>
+    
+    <!-- Quote of the Day -->
+    <div class="quote-card">
+      <p class="quote-text">"Dengan kekuatan besar, datang tanggung jawab yang besar."</p>
+      <div class="quote-author">- Uncle Ben, Spider-Man</div>
+    </div>
+    
+    <!-- Recommended Based on Your Reading -->
+    <div class="section-title">
+      <h2>Rekomendasi untuk Anda</h2>
+      <a href="#" class="see-all">Lihat Semua</a>
+    </div>
+    <div class="grid-container">
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="X-Men" class="book-cover">
+        <div class="book-title">X-Men: Dark Phoenix</div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Guardians of the Galaxy" class="book-cover">
+        <div class="book-title">Guardians of the Galaxy</div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Ant-Man" class="book-cover">
+        <div class="book-title">Ant-Man: Quantum</div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Doctor Strange" class="book-cover">
+        <div class="book-title">Doctor Strange</div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Black Panther" class="book-cover">
+        <div class="book-title">Black Panther: Wakanda</div>
+      </a>
+      <a href="#" class="book-card">
+        <img src="/api/placeholder/150/210" alt="Fantastic Four" class="book-cover">
+        <div class="book-title">Fantastic Four</div>
+      </a>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>BookWise</h4>
+        <ul>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Karir</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Layanan</h4>
+        <ul>
+          <li><a href="#">Program Penulis</a></li>
+          <li><a href="#">Program Affiliate</a></li>
+          <li><a href="#">Langganan Premium</a></li>
+          <li><a href="#">Promo</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Bantuan</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Kontak</a></li>
+          <li><a href="#">Pusat Bantuan</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Unduh Aplikasi</h4>
+        <ul>
+          <li><a href="#">Android</a></li>
+          <li><a href="#">iOS</a></li>
+          <li><a href="#">Windows</a></li>
+          <li><a href="#">Mac</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2025 BookWise. Hak Cipta Dilindungi.
+    </div>
+  </footer>
+  
+  <script>
+    // Basic interactive elements for demo
+    document.querySelectorAll('.category-tag').forEach(tag => {
+      tag.addEventListener('click', () => {
+        document.querySelectorAll('.category-tag').forEach(t => t.classList.remove('active'));
+        tag.classList.add('active');
+      });
+    });
+    
+    // Implement smooth scrolling for horizontal scroll containers
+    document.querySelectorAll('.scroll-container').forEach(container => {
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+      
+      container.addEventListener('mousedown', (e) => {
+        isDown = true;
+        container.style.cursor = 'grabbing';
+        startX = e.pageX - container.offsetLeft;
+        scrollLeft = container.scrollLeft;
+      });
+      
+      container.addEventListener('mouseleave', () => {
+        isDown = false;
+        container.style.cursor = 'grab';
+      });
+      
+      container.addEventListener('mouseup', () => {
+        isDown = false;
+        container.style.cursor = 'grab';
+      });
+      
+      container.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - container.offsetLeft;
+        const walk = (x - startX) * 2;
+        container.scrollLeft = scrollLeft - walk;
+      });
+    });
+  </script>
+</body>
 </html>
